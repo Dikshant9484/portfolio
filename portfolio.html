@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        alert("welcome to my portfolio");
+        let person = prompt("Please enter your name");
+        console.log(person);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKS - Portfolio</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20;
+            padding: 15;
+            background-color:rgb(138, 129, 95);
+        }
+
+        header {
+            background: #837070b2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: hsl(249, 7%, 66%);
+            text-decoration:steelblue; 
+        }
+        a:hover{
+            background-color: rgb(25, 105, 218);
+  font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #acad78;
+            border-radius: 8px;
+            text-align: center;
+        }
+        img{
+            text-align: center;
+        }
+        #image{
+            margin:20px;
+            padding:20px;
+            border-radius:25px;
+            border-style: double;
+            border:10px;
+        }
+        img:hover{
+            background-color: rgb(162, 150, 172);
+        }
+
+        .portfolio-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            flex: 1 1 300px; /* Adjust width */
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+            
+        }
+        .social-icons img{
+            width:30px;
+            height:30px;
+            border-radius:25px;
+            padding:20px;
+            border: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        button{
+            text-align: right;
+            float:right;
+            display:flex;
+        }
+        #services ul{
+            text-align: center;
+            text-decoration: dotted;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="login.html"><button>login</button></a>
+        <a href="registration.html"><button>registration</button></a>
+        <h1>DIKSHANT KUMAR SINGH</h1>
+        <p>WEB DEVELOPER AND AIML ENGINEER</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="courses.html">courses</a></li>
+
+        
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello everyone it your dream place to excel in the variety of courses.Level up your skills with our premium courses.You'll get plenty of knowledge regarding the wolrd of computer science.This platform is degined to provide quality and hassel free knowledge to everyone.</p>
+        <img src="hacker.jpg" alt=" Dikshant kumar singh" width="350px" height="350px"/>DKS
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <h3>Project Title 1</h3>
+                <p>AI/AI tools for generating indian sign language from audio/visual content in English</p>
+                <a href="link-to-project1.html">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project Title 2</h3>
+                <p>conversational Image recognition chatbot</p>
+                <a href="link-to-project2.html">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!--<section id="best-portfolio">
+        <h2>Best Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="best-project1.jpg" alt="Best Project 1">
+                <h3>Best Project Title 1</h3>
+                <p>A standout project that demonstrates your skills.</p>
+                <a href="link-to-best-project1.html">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="best-project2.jpg" alt="Best Project 2">
+                <h3>Best Project Title 2</h3>
+                <p>Another top project that showcases your expertise.</p>
+                <a href="link-to-best-project2.html">View Project</a>
+            </div>
+        </div>
+    </section>
+-->
+
+   <!-- <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Service 1: Description</li>
+            <li>Service 2: Description</li>
+            <li>Service 3: Description</li>
+        </ul>
+    </section>-->
+    <section>
+        <div id="image">
+         <h2>Experts In</h2>
+<img src="css.jpg" width="50px" height="50px"/>
+<img src="html.jpg" width="50px" height="50px"/>
+<img src="python.jpg" width="50px" height="50px"/>
+<img src="img2.jpg" width="50px" height="50px"/>
+<img src="java.jpg" width="50px" height="50px"/>
+</div>
+        </section>
+    
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="your-form-handler.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-icons">
+            <h3>Connect with me:</h3>
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><img src="download.jpg"></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="insta.jpg"></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"><img src="twitter.jpg"></a>
+        </div>
+    </section>
+    <section id="payment">
+        <a href="payment.html" >payment details</a>
+    </section>
+    <section id="services">
+        <h3>services</h3>
+        <ul>
+            <ul>web page desiging</ul>
+            <ul>website development</ul>
+            <ul>AI tools and projects</ul>
+            <ul>Machine learning</ul>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DKS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
